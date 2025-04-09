@@ -1,0 +1,105 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInBody 1.2s ease-in-out;
+}
+
+/* CONTAINER STYLING */
+.container {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: slideUp 1s ease-in-out;
+}
+
+/* HEADINGS */
+.container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #333;
+}
+
+/* LABELS */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* INPUTS & TEXTAREA */
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #5c67f2;
+  box-shadow: 0 0 8px #5c67f280;
+}
+
+/* BUTTON */
+button {
+  margin-top: 25px;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  background-color: #5c67f2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #3f48cc;
+  transform: scale(1.02);
+}
+
+/* ERROR MESSAGE */
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
